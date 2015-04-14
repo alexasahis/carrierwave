@@ -593,6 +593,15 @@ Processing can be enabled for a single version by setting the processing flag on
 @uploader.thumb.enable_processing = true
 ```
 
+## Fog
+
+If you want to use fog you must add in your CarrierWave initializer the
+following line
+
+```ruby
+config.fog_provider = 'fog'
+```
+
 ## Using Amazon S3
 
 [Fog AWS](http://github.com/fog/fog-aws) is used to support Amazon S3. Ensure you have it in your Gemfile:
