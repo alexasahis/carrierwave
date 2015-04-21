@@ -596,10 +596,11 @@ Processing can be enabled for a single version by setting the processing flag on
 ## Fog
 
 If you want to use fog you must add in your CarrierWave initializer the
-following line
+following lines
 
 ```ruby
 config.fog_provider = 'fog'
+config.fog_credentials = { ... } # Provider specific credentials
 ```
 
 ## Using Amazon S3
